@@ -33,7 +33,7 @@
   <body>
     <!-- Conteúdo do site -->
     <!-- Cabeçalho -->
-    <header>
+    <header id="inicio">
       <div class="container">
         <div id="logo">
           <img src="img/logo.png" alt="Hal 9000" title="Hal 9000" />
@@ -41,10 +41,10 @@
             <input title="checkbox" type="checkbox" id="checkbox" />
             <label for="checkbox">&#x268c;</label>
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Conteúdo</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#conteudo">Conteúdo</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -58,7 +58,7 @@
       </div>
     </main>
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
       <div class="container">
         <h2>Aprender na prática</h2>
       </div>
@@ -76,7 +76,7 @@
       </div>
     </section>
     <!-- Conteúdo -->
-    <section>
+    <section id="conteudo">
       <div class="container">
         <h2>Conteúdo</h2>
         <h3>HTML5</h3>
@@ -84,11 +84,13 @@
         <h3>BREAKPOINT</h3>
       </div>
     </section>
-    <!-- Rodape -->´
-    <footer>
+    <!-- Rodape -->
+    <footer id="contato">
       <div class="container"></div>
     </footer>
-
+    <a id="topo" href="#inicio" title="Voltar ao topo"
+      ><img src="img/topo.png" alt="Voltar ao topo" srcset="Topo do site"
+    /></a>
     <script src="/path/to/script.js" defer></script>
   </body>
 </html>

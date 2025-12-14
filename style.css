@@ -37,6 +37,16 @@ h3 {
   background: #77ff00;
 }
 
+/* Topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+#logo img {
+  height: 6rem;
+}
+
 /* Smartphone Portraait */
 /* Smartphone Landscape */
 @media (min-width: 576px) {
