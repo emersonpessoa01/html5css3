@@ -43,11 +43,21 @@ h3 {
   right: 10px;
   bottom: 10px;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #a9a9a9;
+}
+
+/* Smartphone Portrait */
+header {
+  height: 60px;
+}
 #logo img {
   height: 6rem;
 }
-
-/* Smartphone Portraait */
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   body {
@@ -87,4 +97,7 @@ h3 {
   .container {
     max-width: 1040px;
   }
+  /* header {
+    height: 120px;
+  } */
 }
