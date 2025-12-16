@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  background-color: #800000;
+  background-color: #dfdbdb;
   color: #333;
 }
 html {
@@ -34,7 +34,6 @@ h3 {
 /* Layout */
 .container {
   margin: 0 auto;
-  background: #77ff00;
 }
 
 /* Topo do site */
@@ -48,7 +47,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #a9a9a9;
+  
 }
 
 /* Smartphone Portrait */
@@ -58,11 +57,41 @@ header {
 #logo img {
   height: 6rem;
 }
+
+#check {
+  display: none;
+}
+label[for="check"] {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ce0d0d;
+  padding: 0 2rem 0;
+
+}
+nav ul {
+  list-style: none;
+  background: #343538;
+  height: 100vh;
+  position: fixed;
+  top: 6.3rem;
+  right: -100%;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+#check:checked ~ ul {
+  right: 0;
+}
+:is(li) {
+  padding: 2rem;
+  border-bottom: 1px solid #a9a9a9;
+}
+:is(a) {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
 /* Smartphone Landscape */
 @media (min-width: 576px) {
-  body {
-    background-color: lightblue;
-  }
   /* Layout */
   .container {
     max-width: 540px;
@@ -70,9 +99,6 @@ header {
 }
 /* Tablet Portrait */
 @media (min-width: 768px) {
-  body {
-    background-color: rgb(11, 208, 11);
-  }
   /* Layout */
   .container {
     max-width: 720px;
@@ -80,9 +106,6 @@ header {
 }
 /* Tablet Landscape */
 @media (min-width: 991px) {
-  body {
-    background-color: rgb(208, 208, 13);
-  }
   /* Layout */
   .container {
     max-width: 960px;
@@ -90,9 +113,6 @@ header {
 }
 /* PC */
 @media (min-width: 1200px) {
-  body {
-    background-color: rgb(208, 11, 208);
-  }
   /* Layout */
   .container {
     max-width: 1040px;
@@ -100,4 +120,21 @@ header {
   /* header {
     height: 120px;
   } */
+  label[for="check"] {
+    display: none;
+  }
+  nav ul {
+    position: initial;
+    height: auto;
+    width: auto;
+    background: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin-top: 5rem;
+  }
+  :is(a):hover {
+    color: #ce0d0d;
+    
+  }
 }
