@@ -47,7 +47,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 /* Smartphone Portrait */
@@ -66,7 +65,6 @@ label[for="check"] {
   cursor: pointer;
   color: #ce0d0dcf;
   padding: 0 2rem 0;
-
 }
 nav ul {
   list-style: none;
@@ -90,6 +88,20 @@ nav ul {
   color: #fff;
   font-size: 2rem;
 }
+/* Destaque */
+main {
+  margin-top: 8rem;
+  height: 75vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+main h1 {
+  font-size: 2.5rem;
+}
+
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   /* Layout */
@@ -135,6 +147,5 @@ nav ul {
   }
   :is(a):hover {
     color: #ce0d0d;
-    
   }
 }
