@@ -1,151 +1,15 @@
-/* 
-    Folha de estilo so site one page HTML e CSS
-    @author: Emerson Pessoa
-    @data: 08-12-2025
-    github:https://github.com/emersonpessoa01
-*/
+@import url(./reset.css);
+@import url(./topo.css);
+@import url(./layout.css);
+@import url(./smartphone-portrait.css); 
+@import url(./destaque.css);
+@import url(./media.css);
 
-/* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-body {
-  font-family: "Fira Code", monospace;
-  /* font-optical-sizing: auto; */
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  background-color: #dfdbdb;
-  color: #333;
-}
-html {
-  font-size: 62.5%;
-}
-h2,
-h3 {
-  font-size: 1.6rem;
-}
 
-/* Layout */
-.container {
-  margin: 0 auto;
-}
 
-/* Topo do site */
-#topo {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-}
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-/* Smartphone Portrait */
-header {
-  height: 60px;
-}
-#logo img {
-  height: 6rem;
-}
 
-#check {
-  display: none;
-}
-label[for="check"] {
-  font-size: 3rem;
-  cursor: pointer;
-  color: #ce0d0dcf;
-  padding: 0 2rem 0;
-}
-nav ul {
-  list-style: none;
-  background: #343538;
-  height: 100vh;
-  position: fixed;
-  top: 6.3rem;
-  right: -100%;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-#check:checked ~ ul {
-  right: 0;
-}
-:is(li) {
-  padding: 2rem;
-  border-bottom: 1px solid #a9a9a9;
-}
-:is(a) {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-}
-/* Destaque */
-main {
-  margin-top: 8rem;
-  height: 75vh;
-  background: url(img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff;
-}
-main h1 {
-  font-size: 2.5rem;
-}
 
-/* Smartphone Landscape */
-@media (min-width: 576px) {
-  /* Layout */
-  .container {
-    max-width: 540px;
-  }
-}
-/* Tablet Portrait */
-@media (min-width: 768px) {
-  /* Layout */
-  .container {
-    max-width: 720px;
-  }
-}
-/* Tablet Landscape */
-@media (min-width: 991px) {
-  /* Layout */
-  .container {
-    max-width: 960px;
-  }
-}
-/* PC */
-@media (min-width: 1200px) {
-  /* Layout */
-  .container {
-    max-width: 1040px;
-  }
-  /* header {
-    height: 120px;
-  } */
-  label[for="check"] {
-    display: none;
-  }
-  nav ul {
-    position: initial;
-    height: auto;
-    width: auto;
-    background: none;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s ease;
-    margin-top: 5rem;
-  }
-  :is(a):hover {
-    color: #ce0d0d;
-  }
-}
+

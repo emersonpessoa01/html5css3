@@ -1,0 +1,47 @@
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+  /* Layout */
+  .container {
+    max-width: 540px;
+  }
+}
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  /* Layout */
+  .container {
+    max-width: 720px;
+  }
+}
+/* Tablet Landscape */
+@media (min-width: 991px) {
+  /* Layout */
+  .container {
+    max-width: 960px;
+  }
+}
+/* PC */
+@media (min-width: 1200px) {
+  /* Layout */
+  .container {
+    max-width: 1040px;
+  }
+  /* header {
+    height: 120px;
+  } */
+  label[for="check"] {
+    display: none;
+  }
+  nav ul {
+    position: initial;
+    height: auto;
+    width: auto;
+    background: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin-top: 5rem;
+  }
+  :is(a):hover {
+    color: var(--cor-primaria);
+  }
+}

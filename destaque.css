@@ -1,0 +1,16 @@
+/* Destaque */
+main {
+  margin-top: 8rem;
+  height: 75vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+main h1 {
+  font-size: 4rem;
+}
+main h2 {
+  font-size: 1.6rem;
+}
