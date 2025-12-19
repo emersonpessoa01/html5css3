@@ -20,7 +20,7 @@ nav ul {
   background: var(--cor-secundaria);
   height: 100vh;
   position: fixed;
-  top: 6.3rem;
+  top: 6rem;
   right: -100%;
   width: 100%;
   transition: all 0.5s ease;
@@ -30,10 +30,6 @@ nav ul {
 }
 :is(li) {
   padding: 2rem;
-  border-bottom: 1px solid var(--border-botton);
+  /* border-bottom: 1px solid var(--border-botton); */
 }
-:is(a) {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-}
+

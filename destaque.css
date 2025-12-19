@@ -1,16 +1,20 @@
 /* Destaque */
 main {
-  margin-top: 8rem;
-  height: 75vh;
+  /* margin-top: 8rem; */
+  /* height: 75vh; */
   background: url(img/banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main h1 {
   font-size: 4rem;
 }
 main h2 {
   font-size: 1.6rem;
+  margin: 2rem 0 5rem 0;
 }

@@ -1,8 +1,27 @@
+@media (min-width: 320px) {
+  :is(li) {
+    border-bottom: 1px solid var(--border-botton);
+  }
+  :is(a) {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  :is(a):hover {
+    color: var(--cor-primaria);
+  }
+  
+}
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   /* Layout */
   .container {
     max-width: 540px;
+  }
+  main h1,
+  main h2 {
+    text-shadow: #000 2px 2px 4px;
   }
 }
 /* Tablet Portrait */
@@ -11,12 +30,26 @@
   .container {
     max-width: 720px;
   }
+  /* Destaque */
+  main {
+    height: 45vh;
+  }
+  main h1{
+    font-size: 8.8rem;
+  }
+  main h2{
+    font-size: 3.2rem;
+  }
 }
 /* Tablet Landscape */
 @media (min-width: 991px) {
   /* Layout */
   .container {
     max-width: 960px;
+  }
+  /* Destaque */
+  main {
+    height: 70vh;
   }
 }
 /* PC */
@@ -39,7 +72,19 @@
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+  }
+  :is(li) {
+    padding: 2rem;
+    border-bottom: none;
+  }
+
+  :is(a) {
+    text-decoration: none;
+    /* color: #fff; */
+    color: var(--cor-texto);
+    font-size: 2rem;
+    font-weight: 500;
   }
   :is(a):hover {
     color: var(--cor-primaria);

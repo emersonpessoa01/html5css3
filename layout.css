@@ -2,3 +2,24 @@
 .container {
   margin: 0 auto;
 }
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.botao {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--cor-primaria);
+  color: #fff;
+  text-decoration: none;
+  border: .2rem solid var(--cor-fundo);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  /* margin-top: 2rem; */
+  transition: background 0.3s ease;
+}
+.botao:hover {
+  background: #a80b0b;
+  color: #fff;
+}
