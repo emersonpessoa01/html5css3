@@ -2,7 +2,7 @@
 main {
   /* margin-top: 8rem; */
   /* height: 75vh; */
-  background: url(img/banner.jpg);
+  background: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

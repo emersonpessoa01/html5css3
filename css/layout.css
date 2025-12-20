@@ -1,19 +1,21 @@
 /* Layout */
 .container {
+  /* max-width: 1040px; */
   margin: 0 auto;
-}
-.flex {
+  padding-inline: 2rem;
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: space-between;
+  align-items: center;
 }
+
 .botao {
   display: inline-block;
   padding: 1rem 3rem;
   background: var(--cor-primaria);
   color: #fff;
   text-decoration: none;
-  border: .2rem solid var(--cor-fundo);
+  border: 0.2rem solid var(--cor-fundo);
   border-radius: 0.5rem;
   font-size: 1.6rem;
   /* margin-top: 2rem; */
@@ -22,4 +24,10 @@
 .botao:hover {
   background: #a80b0b;
   color: #fff;
+}
+/* topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }

@@ -1,4 +1,5 @@
-@media (min-width: 320px) {
+@media (max-width: 320px) {
+  
   :is(li) {
     border-bottom: 1px solid var(--border-botton);
   }
@@ -11,13 +12,39 @@
   :is(a):hover {
     color: var(--cor-primaria);
   }
-  
+}
+@media (min-width: 320px) {
+  /* Destaque */
+  main {
+    height: 50vh;
+  }
+
+  nav ul {
+    top: 84px;
+  }
+  :is(li) {
+    border-bottom: 1px solid var(--border-botton);
+    padding-top: 35px;
+  }
+  :is(a) {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  :is(a):hover {
+    color: var(--cor-primaria);
+  }
 }
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   /* Layout */
   .container {
     max-width: 540px;
+  }
+  /* Destaque */
+  main {
+    height: 60vh;
   }
   main h1,
   main h2 {
@@ -32,12 +59,12 @@
   }
   /* Destaque */
   main {
-    height: 45vh;
+    height: 70vh;
   }
-  main h1{
+  main h1 {
     font-size: 8.8rem;
   }
-  main h2{
+  main h2 {
     font-size: 3.2rem;
   }
 }
@@ -56,26 +83,48 @@
 @media (min-width: 1200px) {
   /* Layout */
   .container {
-    max-width: 1040px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
   }
-  /* header {
-    height: 120px;
-  } */
+  
+  #logo {
+    width: clamp(173px, 16vw, 277px);
+    margin-top: 10px;
+  }
+
+  #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   label[for="check"] {
     display: none;
   }
-  nav ul {
-    position: initial;
-    height: auto;
-    width: auto;
-    background: none;
+  
+  nav{
+    width: 100%;
     display: flex;
     align-items: center;
-    transition: all 0.5s ease;
-    /* margin-top: 5rem; */
+    justify-content: flex-end;
+    padding: 57px 0;
+  }
+  
+  nav ul {
+    position: static;
+    display: flex;
+    gap: 5rem;
+    background: none;
+    height: auto;
+    width: auto;
+   
   }
   :is(li) {
-    padding: 2rem;
+    padding: 0;
     border-bottom: none;
   }
 
