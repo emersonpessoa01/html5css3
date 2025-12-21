@@ -1,7 +1,8 @@
 /* Smartphone Portrait */
 header {
   position: relative;
-  height: clamp(90px, 10vw, 135px);
+  /* height: clamp(90px, 10vw, 135px); */
+  height: clamp(100px, 12vw, 135px);
   overflow: visible;
   /* display: flex;
   align-items: center;
@@ -12,7 +13,8 @@ header {
   position: absolute;
   left: 0;
   top: 50%;
-  width: clamp(180px, 14vw, 240px);
+  /* width: clamp(180px, 14vw, 240px); */
+  width: clamp(40px, 38vw, 240px);
   transform: translateY(-35%) translateX(22%);
   z-index: 40;
 }
@@ -27,14 +29,21 @@ header {
   display: none;
 }
 label[for="check"] {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+
+  transform: translateY(-50%);
+
   font-size: 3rem;
   cursor: pointer;
   color: var(--cor-primaria);
-  padding: 0 2rem 0;
-  position: absolute;
-  top: 25px;
-  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 nav{
   width: 100%;               /* ISSO é o que faltava */
   display: flex;
@@ -58,5 +67,5 @@ nav ul {
 }
 :is(li) {
   padding: 2rem;
-  /* border-bottom: 1px solid var(--border-botton); */
+  /* border-bottom: 1px solid var(--border-bottom); */
 }

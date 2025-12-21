@@ -1,7 +1,7 @@
 @media (max-width: 320px) {
   
   :is(li) {
-    border-bottom: 1px solid var(--border-botton);
+    border-bottom: 1px solid var(--border-bottom);
   }
   :is(a) {
     text-decoration: none;
@@ -23,7 +23,7 @@
     top: 84px;
   }
   :is(li) {
-    border-bottom: 1px solid var(--border-botton);
+    border-bottom: 1px solid var(--border-bottom);
     padding-top: 35px;
   }
   :is(a) {
