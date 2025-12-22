@@ -5,11 +5,11 @@ header {
   left: 0;
   width: 100%;
   height: clamp(100px, 12vw, 135px);
-  z-index: 100;
+  z-index: 1000;
   overflow: visible;
+  /* background-color: var(--cor-header); */
+  box-shadow: 2px 2px 10px #fff, -2px -2px 10px #000;
 }
-
-
 
 #logo {
   position: absolute;
@@ -46,8 +46,8 @@ label[for="check"] {
   justify-content: center;
 }
 
-nav{
-  width: 100%;               /* ISSO é o que faltava */
+nav {
+  width: 100%; /* ISSO é o que faltava */
   display: flex;
   justify-content: flex-end; /* agora sim vai para a direita */
   align-items: center;
