@@ -9,6 +9,8 @@ header {
   overflow: visible;
   /* background-color: var(--cor-header); */
   box-shadow: 2px 2px 10px #fff, -2px -2px 10px #000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 #logo {
