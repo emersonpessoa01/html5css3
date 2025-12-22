@@ -6,6 +6,9 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+.flex2 {
+  display: flex;
   align-items: center;
 }
 
