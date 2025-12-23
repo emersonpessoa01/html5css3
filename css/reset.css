@@ -24,7 +24,7 @@
   border: 0;
 }
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "Poppins", monospace;
   /* font-optical-sizing: auto; */
   font-weight: 400;
   font-style: normal;
@@ -40,7 +40,4 @@ h2,
 h3 {
   font-size: 1.6rem;
 }
-main,
-section {
-  padding: 2rem 4%;
-}
+
