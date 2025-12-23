@@ -16,13 +16,15 @@
   font-size: 1.6rem;
   line-height: 1.8;
   flex: 1 1 250px;
+  flex: 1 1 auto;
 }
 .textoSite h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 #video {
-  flex: 1 1 400px;
+  /* flex: 1 1 400px; */
+  flex: 1 1 auto;
   height: 37.7rem;
 }
 #video iframe {
