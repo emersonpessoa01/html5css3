@@ -5,8 +5,8 @@
   background: url(../img/background.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 70vh;
 }
 .containerSobre {
@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 #destaqueSobre {
   /* display: none; */
