@@ -56,8 +56,10 @@ body {
   font-size: 1rem;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  padding-top: clamp(100px, 12vw, 135px); /* Compensar o conteúdo da página */
+  padding-top: clamp(100px, 12vw, 135px); 
+  /* Compensar o conteúdo da página */
 }
+
 h2,
 h3 {
   font-size: 1.6rem;
