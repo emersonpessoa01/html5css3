@@ -25,7 +25,7 @@
   transition: background 0.3s ease;
 }
 .botao:hover {
-  background: #a80b0b;
+  background: var(--hover);
   color: #fff;
 }
 /* topo do site */

@@ -14,7 +14,8 @@
   --cor-fundo: #dfdbdb;
   --cor-texto: #333;
   --border-bottom: #a9a9a9;
-  --cor-header:#dfdbdb78;
+  --cor-header: #dfdbdb78;
+  --hover: #a80b0b;
 }
 
 /* CSS Reset */
@@ -23,6 +24,30 @@
   padding: 0;
   border: 0;
 }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1.2rem;
+  height: 0.25px;
+}
+html::-webkit-scrollbar-track {
+  /* background: transparent; */
+  background: inset 0 0 5px var(--border-bottom);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--cor-primaria);
+  border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+  cursor: pointer;
+}
+
 body {
   font-family: "Poppins", monospace;
   /* font-optical-sizing: auto; */
@@ -33,11 +58,7 @@ body {
   color: var(--cor-texto);
   padding-top: clamp(100px, 12vw, 135px); /* Compensar o conteúdo da página */
 }
-html {
-  font-size: 62.5%;
-}
 h2,
 h3 {
   font-size: 1.6rem;
 }
-
