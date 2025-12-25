@@ -22,7 +22,7 @@
   font-size: 2.4rem;
   margin-bottom: 1rem;
 }
-#textoWire p,
+#textoWire p, #textoWire
 a {
   color: var(--cor-fundo);
   max-width: 800px;
