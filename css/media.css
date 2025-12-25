@@ -49,6 +49,7 @@
   main h2 {
     text-shadow: #000 2px 2px 4px;
   }
+  
 }
 /* Tablet Portrait */
 @media (min-width: 768px) {
