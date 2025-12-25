@@ -8,13 +8,13 @@
   background-repeat: no-repeat;
 }
 .wireframeContainer {
+  padding: 2rem 7%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
 }
 #textoWire {
-  padding: 2rem 7%;
   flex: 1 1 56rem;
 }
 #textoWire h2 {
@@ -22,18 +22,24 @@
   font-size: 2.4rem;
   margin-bottom: 1rem;
 }
-#textoWire p {
+#textoWire p,
+a {
   color: var(--cor-fundo);
   max-width: 800px;
   font-size: 1.6rem;
   line-height: 1.8;
-  padding: 0 1rem;
 }
+
 #qrcode {
-  flex: 1 1 10rem;
-  padding: 2rem 7%;
+  flex: 1 1 25rem;
+  max-width: 25rem;
+  height: auto;
+  margin: 0 auto;
 }
 #qrcode img {
+  width: 100%;
+  height: auto; /* Para evitar algumas distorções em alguns navegadores */
+  object-fit: contain; /* Para manter a proporção da imagem */
   display: block;
   box-shadow: 2px 2px 10px #fff, -2px -2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.6rem;

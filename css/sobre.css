@@ -33,7 +33,7 @@
   max-width: 800px;
   font-size: 1.6rem;
   line-height: 1.8;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   display: flex;
   flex-flow: column wrap;
   gap: 1.6rem;
