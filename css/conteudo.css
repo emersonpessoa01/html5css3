@@ -76,5 +76,5 @@
 }
 #todos a:hover {
   background-color: var(--hover);
-  color: var(--cor-fundo);
+  color: #fff;
 }

@@ -28,7 +28,16 @@
 
     <title>HTML5 e CSS3 - Onepage site</title>
     <link rel="icon" href="img/movel.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/smartphone-portrait.css">
+    <link rel="stylesheet" href="css/destaque.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/onepage.css">
+    <link rel="stylesheet" href="css/scrollTop.css">
+    <link rel="stylesheet" href="css/wireframe.css">
+    <link rel="stylesheet" href="css/conteudo.css">
 
     <!-- Font Awesome -->
     <link
@@ -208,16 +217,117 @@
       </div>
     </section>
     <!-- Rodape -->
-    <footer id="contato">
-      <div class="container"></div>
+    <address>
+      <div class="Container Flex6">
+        <div id="contato">
+          <a
+            href="https://api.whatsapp.com/send?phone=5511012345678"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="img/whatsapp.png"
+              alt="whatsapp"
+              title="Abrir no WhatsApp"
+            />
+            <p>(11) 01234-5678</p>
+          </a>
+          <img src="img/fone.png" alt="fone" />
+          <p>(11) 01234-5678</p>
+        </div>
+        <div>
+          <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"
+            ><img src="img/mapa.png" alt="Mapa" id="iconeMapa"
+          /></a>
+          <img src="img/local.png" alt="local" id="iconeLocal" />
+          <p>Rua Nome da rua, 1234</p>
+          <p>Nome do bairro</p>
+          <p>São Paulo - SP</p>
+          <a href="mailto:seuemail@email.com?subject=HTML5CSS3">
+            <img src="img/email.png" alt="email" title="Enviar E-mail" />
+            <p>seuemail@email.com</p>
+          </a>
+          <p id="dados">&#128064; Endereço e dados de contato ficticios</p>
+        </div>
+        <div id="googleMaps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14631.893034344139!2d-46.56380894999999!3d-23.5334642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1656422745432!5m2!1spt-BR!2sbr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </address>
+    <footer>
+      <div class="Container Flex5">
+        <div>
+          <p>
+            &#169;<span id="copyrightYear"></span> -
+            <a
+              href="https://joseassis.com.br/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Professor José de Assis</a
+            >
+          </p>
+        </div>
+        <div id="social">
+          <a
+            href="https://www.youtube.com/c/RoboticapraticaBr"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img src="img/youtube.png" alt="youtube"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/professorjosedeassis"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img src="img/linkedin.png" alt="linkedin"
+          /></a>
+          <a
+            href="https://www.facebook.com/professorjosedeassis"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img src="img/facebook.png" alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/prof.joseassis/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img src="img/instagram.png" alt="instagram"
+          /></a>
+          <a
+            href="https://twitter.com/joseassis"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img src="img/twitter.png" alt="twitter"
+          /></a>
+        </div>
+      </div>
     </footer>
-    <!-- <a id="topo" href="#inicio" title="Voltar ao topo"
-      ><img src="img/topo.png" alt="Voltar ao topo" srcset="Topo do site"
-    /></a> -->
+    
     <!-- SCROLLTOP -->
     <button class="scrollTop" title="Voltar ao topo">
       <i class="fa-solid fa-chevron-up"></i>
     </button>
+    <script>
+      // Atualizar automaticamente o ano
+      let ano = document.getElementById("copyrightYear");
+      let anoAtual = new Date().getFullYear();
+      ano.textContent = anoAtual;
+
+      // Recolher menu ao rolar
+      window.addEventListener("scroll", function () {
+        const menuCheckbox = document.getElementById("check");
+        if (menuCheckbox.checked) {
+          menuCheckbox.checked = false;
+        }
+      });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
