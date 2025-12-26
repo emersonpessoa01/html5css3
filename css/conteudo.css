@@ -8,7 +8,7 @@
 .containerConteudo h2 {
   color: var(--cor-secundaria);
   margin-bottom: 2rem;
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   text-align: center;
 }
 .cards {
@@ -38,7 +38,8 @@
 
 .cards .card h3 {
   color: var(--cor-secundaria);
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  word-break: break-word;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -66,7 +67,7 @@
   transition: all 0.5s ease-in-out;
   color: #fff;
   background: var(--cor-primaria);
-    border-radius: 2.5rem;
+  border-radius: 2.5rem;
 }
 #todos a:hover {
   background-color: var(--hover);
