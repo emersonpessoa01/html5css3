@@ -27,7 +27,6 @@
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 .cards .card img {
   width: 100%;
@@ -53,19 +52,22 @@
 .cards .card .botao {
   align-self: center;
   margin-top: auto;
-  
 }
 #todos {
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
 }
 #todos a {
+  display: inline-block;
   padding: 1rem 4rem;
   font-size: 2rem;
   font-weight: 700;
   color: var(--cor-secundaria);
   transition: all 0.5s ease-in-out;
+  color: #fff;
+  background: var(--cor-primaria);
+    border-radius: 2.5rem;
 }
 #todos a:hover {
   background-color: var(--hover);
-  color: #fff;
 }
