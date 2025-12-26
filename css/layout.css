@@ -23,6 +23,7 @@
   font-size: 1.6rem;
   /* margin-top: 2rem; */
   transition: background 0.3s ease;
+  text-align: center;
 }
 .botao:hover {
   background: var(--hover);

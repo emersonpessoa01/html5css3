@@ -35,6 +35,8 @@
     color: var(--cor-primaria);
   }
 }
+
+
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   /* Layout */
