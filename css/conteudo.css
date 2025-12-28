@@ -2,7 +2,8 @@
   padding: 5rem 0;
 }
 .containerConteudo {
-  padding-inline: clamp(1.6rem, 5vw, 7%);
+  /* padding-inline: clamp(1.6rem, 5vw, 7%); */
+  padding-inline: clamp(2rem, 7vw, 7%);
   padding-block: 2rem;
 }
 .containerConteudo h2 {
