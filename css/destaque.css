@@ -2,9 +2,9 @@
 main {
   /* margin-top: 8rem; */
   min-height: 75vh;
-  background: url(../img/banner.jpg);
+  background: url(../img/banner2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 65% 30px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
@@ -14,8 +14,21 @@ main {
 }
 main h1 {
   font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 0px 5px 10px var(--cinzaEscuro),
+  0px 10px 10px rgba(0, 0, 0, 0.15),
+  0px 15px 15px rgba(0, 0, 0, 0.15),
+  0px 20px 20px rgba(0,0,0,0.1),
+  0px 20px 20px rgba(0,0,0,0.1);
 }
 main h2 {
   font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0px 5px 10px var(--cinzaEscuro),
+  0px 10px 10px rgba(0, 0, 0, 0.15),
+  0px 15px 15px rgba(0, 0, 0, 0.15),
+  0px 20px 20px rgba(0,0,0,0.1),
+  0px 20px 20px rgba(0,0,0,0.1);
   margin: 2rem 0 5rem 0;
 }

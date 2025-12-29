@@ -169,10 +169,10 @@
   main {
     height: 60vh;
   }
-  main h1,
+  /* main h1,
   main h2 {
     text-shadow: #000 2px 2px 4px;
-  }
+  } */
   /* Rodapé */
   .flex5 {
     flex-direction: row;
